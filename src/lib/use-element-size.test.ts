@@ -12,7 +12,7 @@ class ResizeObserverMock {
   disconnect() {}
 }
 
-describe(_shouldUpdateSize.name, () => {
+describe(_shouldUpdateSize, () => {
   test.each(["height", "width", undefined])(
     "dimension %s ->  same values (shouldn't calculate)",
     (dimension) => {
